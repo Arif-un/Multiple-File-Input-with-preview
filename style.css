@@ -1,0 +1,105 @@
+.btcd-f-input {
+    display: inline-block;
+    width: 340px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btcd-f-input>div>input::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+.btcd-f-wrp {
+    cursor: pointer;
+}
+
+.btcd-f-wrp>small {
+    color: gray;
+}
+
+.btcd-f-wrp>button {
+    cursor: pointer;
+    background: #f3f3f3;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 9px;
+    border: none;
+    margin-right: 8px;
+}
+
+.btcd-f-wrp>button>img {
+    width: 24px;
+}
+
+.btcd-f-wrp>button>span {
+    vertical-align: super;
+}
+
+.btcd-f-wrp>button:hover {
+    background: black
+}
+
+.btcd-f-input>.btcd-f-wrp>input {
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btcd-f-wrp:hover {
+    background: #fafafa;
+    border-radius: 10px;
+}
+
+.btcd-files>div {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 10px;
+    margin-left: 30px;
+    width: 91%;
+    margin-top: 10px;
+}
+
+.btcd-files>div>div {
+    display: inline-block;
+    width: 73%;
+}
+
+.btcd-files>div>div>small {
+    color: gray;
+}
+
+.btcd-files>div>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.btcd-files>div>div>span {
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btcd-files>div>button {
+    background: #e8e8e8;
+    border: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    font-size: 21px;
+    margin-right: 6px;
+    padding: 0;
+}
+
+.btcd-files>div>button:hover {
+    background: #bbbbbb;
+
+}
