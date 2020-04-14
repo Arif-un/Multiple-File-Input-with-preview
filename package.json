@@ -1,0 +1,24 @@
+{
+  "name": "multiple-file-input-with-preview",
+  "version": "1.0.0",
+  "description": "input type=\"file\" has been customized to upload multiple file with show samll preview (pictures only)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arif-un/Multiple-File-Input-with-preview.git"
+  },
+  "keywords": [
+    "multiple",
+    "file",
+    "input"
+  ],
+  "author": "Mohd-Arif-Un",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arif-un/Multiple-File-Input-with-preview/issues"
+  },
+  "homepage": "https://github.com/Arif-un/Multiple-File-Input-with-preview#readme"
+}
