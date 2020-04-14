@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .btcd-f-input {
     display: inline-block;
     width: 340px;
@@ -5,7 +13,7 @@
     overflow: hidden;
 }
 
-.btcd-f-input>div>input::-webkit-file-upload-button {
+.btcd-f-input > div > input::-webkit-file-upload-button {
     cursor: pointer;
 }
 
@@ -13,11 +21,11 @@
     cursor: pointer;
 }
 
-.btcd-f-wrp>small {
+.btcd-f-wrp > small {
     color: gray;
 }
 
-.btcd-f-wrp>button {
+.btcd-f-wrp > button {
     cursor: pointer;
     background: #f3f3f3;
     padding: 5px;
@@ -25,27 +33,26 @@
     border-radius: 9px;
     border: none;
     margin-right: 8px;
+    height: 35px;
 }
 
-.btcd-f-wrp>button>img {
+.btcd-f-wrp > button > img {
     width: 24px;
 }
 
-.btcd-f-wrp>button>span {
+.btcd-f-wrp > button > span,
+.btcd-f-wrp > span,
+.btcd-f-wrp > small {
     vertical-align: super;
 }
 
-.btcd-f-wrp>button:hover {
-    background: black
-}
-
-.btcd-f-input>.btcd-f-wrp>input {
+.btcd-f-input > .btcd-f-wrp > input {
     z-index: 100;
     width: 100%;
     position: absolute;
     opacity: 0;
     left: 0;
-    height: 35px;
+    height: 37px;
     cursor: pointer;
 }
 
@@ -54,7 +61,7 @@
     border-radius: 10px;
 }
 
-.btcd-files>div {
+.btcd-files > div {
     display: flex;
     align-items: center;
     background: #f8f8f8;
@@ -62,25 +69,26 @@
     margin-left: 30px;
     width: 91%;
     margin-top: 10px;
+    height: 40px;
 }
 
-.btcd-files>div>div {
+.btcd-files > div > div {
     display: inline-block;
     width: 73%;
 }
 
-.btcd-files>div>div>small {
+.btcd-files > div > div > small {
     color: gray;
 }
 
-.btcd-files>div>img {
+.btcd-files > div > img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
     border-radius: 10px;
 }
 
-.btcd-files>div>div>span {
+.btcd-files > div > div > span {
     display: inline-block;
     width: 100%;
     text-overflow: ellipsis;
@@ -88,18 +96,17 @@
     white-space: nowrap;
 }
 
-.btcd-files>div>button {
+.btcd-files > div > button {
     background: #e8e8e8;
     border: none;
     border-radius: 50px;
     width: 25px;
     height: 25px;
-    font-size: 21px;
+    font-size: 20px;
     margin-right: 6px;
     padding: 0;
 }
 
-.btcd-files>div>button:hover {
+.btcd-files > div > button:hover {
     background: #bbbbbb;
-
 }

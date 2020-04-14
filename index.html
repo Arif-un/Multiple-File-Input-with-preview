@@ -5,51 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Multiple File Input With preview</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <form action="https://api_test.co" method="post" enctype="multipart/form-data">
+    <form action="http://api_test.co" method="post" enctype="multipart/form-data">
 
         <div class="btcd-f-input">
             <div class="btcd-f-wrp">
-                <button> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDY0IDY0IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJDbGlwIj48cGF0aCBkPSJtMTIuMDggNTcuNzQ5YTkgOSAwIDAgMCAxMi43MjggMGwzMS4xMTItMzEuMTEzYTEzIDEzIDAgMSAwIC0xOC4zODQtMTguMzg1bC0yMC41MDcgMjAuNTA2IDEuNDE1IDEuNDE1IDIwLjUwNi0yMC41MDZhMTEgMTEgMCAxIDEgMTUuNTU2IDE1LjU1NmwtMzEuMTEyIDMxLjExMmE3IDcgMCAwIDEgLTkuOS05LjlsMjYuODctMjYuODdhMyAzIDAgMCAxIDQuMjQyIDQuMjQzbC0xNi4yNjMgMTYuMjY0IDEuNDE0IDEuNDE0IDE2LjI2NC0xNi4yNjNhNSA1IDAgMCAwIC03LjA3MS03LjA3MWwtMjYuODcgMjYuODdhOSA5IDAgMCAwIDAgMTIuNzI4eiIvPjwvZz48L3N2Zz4=" alt=""> <span> Attach File</span></button>
+                <button class="btcd-inpBtn" type="button">
+                    <img src="" alt="">
+                    <span> Attach File</span>
+                </button>
                 <span class="btcd-f-title">No File Chosen</span>
-                <small>(Max 2 MB)</small>
-                <input accept="image/*" type="file" name="measd" id="">
+                <small class="f-max">(Max 2 MB)</small>
+                <input type="file" name="single" id="">
             </div>
-            <div class="btcd-files">
-            </div>
+            <div class="btcd-files"></div>
         </div>
 
         <div class="btcd-f-input">
             <div class="btcd-f-wrp">
-                <button> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDY0IDY0IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJDbGlwIj48cGF0aCBkPSJtMTIuMDggNTcuNzQ5YTkgOSAwIDAgMCAxMi43MjggMGwzMS4xMTItMzEuMTEzYTEzIDEzIDAgMSAwIC0xOC4zODQtMTguMzg1bC0yMC41MDcgMjAuNTA2IDEuNDE1IDEuNDE1IDIwLjUwNi0yMC41MDZhMTEgMTEgMCAxIDEgMTUuNTU2IDE1LjU1NmwtMzEuMTEyIDMxLjExMmE3IDcgMCAwIDEgLTkuOS05LjlsMjYuODctMjYuODdhMyAzIDAgMCAxIDQuMjQyIDQuMjQzbC0xNi4yNjMgMTYuMjY0IDEuNDE0IDEuNDE0IDE2LjI2NC0xNi4yNjNhNSA1IDAgMCAwIC03LjA3MS03LjA3MWwtMjYuODcgMjYuODdhOSA5IDAgMCAwIDAgMTIuNzI4eiIvPjwvZz48L3N2Zz4=" alt=""> <span> Attach File</span></button>
+                <button class="btcd-inpBtn" type="button"> <img src="" alt=""> <span> Attach File</span></button>
                 <span class="btcd-f-title">No File Chosen</span>
-                <small>(Max 2 MB)</small>
-                <input multiple accept="image/*" type="file" name="meadsd[]" id="">
+                <small class="f-max"> (Max 2 MB)</small>
+                <input multiple type="file" name="multiple[]" id="">
             </div>
             <div class="btcd-files">
             </div>
         </div>
         <div class="btcd-f-input">
             <div class="btcd-f-wrp">
-                <button> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDY0IDY0IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJDbGlwIj48cGF0aCBkPSJtMTIuMDggNTcuNzQ5YTkgOSAwIDAgMCAxMi43MjggMGwzMS4xMTItMzEuMTEzYTEzIDEzIDAgMSAwIC0xOC4zODQtMTguMzg1bC0yMC41MDcgMjAuNTA2IDEuNDE1IDEuNDE1IDIwLjUwNi0yMC41MDZhMTEgMTEgMCAxIDEgMTUuNTU2IDE1LjU1NmwtMzEuMTEyIDMxLjExMmE3IDcgMCAwIDEgLTkuOS05LjlsMjYuODctMjYuODdhMyAzIDAgMCAxIDQuMjQyIDQuMjQzbC0xNi4yNjMgMTYuMjY0IDEuNDE0IDEuNDE0IDE2LjI2NC0xNi4yNjNhNSA1IDAgMCAwIC03LjA3MS03LjA3MWwtMjYuODcgMjYuODdhOSA5IDAgMCAwIDAgMTIuNzI4eiIvPjwvZz48L3N2Zz4=" alt=""> <span> Attach File</span></button>
+                <button class="btcd-inpBtn" type="button"> <img src="" alt=""> <span> Attach File</span></button>
                 <span class="btcd-f-title">No File Chosen</span>
-                <small>(Max 2 MB)</small>
-                <input multiple accept="image/*" type="file" name="ame[]" id="">
+                <small class="f-max">(Max 1 MB)</small>
+                <input multiple type="file" name="snd_multiple" id="">
             </div>
             <div class="btcd-files">
+
             </div>
         </div>
 
-        <button type="submit">savae</button>
-        <input type="file" name="" id="">
     </form>
 
-
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="https://unpkg.com/create-file-list@1.0.1/dist/create-file-list.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
